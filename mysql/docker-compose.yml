@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  ex1:
+    container_name: ex1
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD:123456
+    volumes:
+      - /home/citigo/mysql_data:/var/lib/mysql
+
