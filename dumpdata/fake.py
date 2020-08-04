@@ -1,6 +1,8 @@
-import Database
 import random
 import string
+
+from Citigo_Ex1.dumpdata import Database
+
 db = Database.DataBase()
 
 def random_int(start, end):
@@ -66,6 +68,10 @@ def insert_year():
 
 def get_quater_id():
     print()
+
+
+# input: dd/mm/yyyy
+# output: dayid, weekid, monthid, quaterid, yearid
 def get_date():
     listDate = []
     months = [0,31,28,31,30,31,30,31,31,30,31,30,31]
@@ -103,6 +109,6 @@ def get_date():
 
 if __name__ == "__main__":
     print()
-    insert_year()
+    get_date();
 
 
