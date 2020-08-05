@@ -74,37 +74,47 @@ def get_quater_id():
 # output: dayid, weekid, monthid, quaterid, yearid
 def get_date():
     listDate = []
-    months = [0,31,28,31,30,31,30,31,31,30,31,30,31]
-    for _year in range(2019,2021):
+    months = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    quaters = [0, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4]
+    for _year in range(2019, 2020):
         year_id = _year
         day_id = 0
         week_id = 0
         month_id = 0
         quater_id = 0
-        for _month in range(1,13):
-            d = 0
+        d = 1
+        for _month in range(1, 13):
+            quater_id = quaters[_month]
+            month_id = _month
             w = 1
-            if _month == 1: d = 6
-            for _day in range(1,months[_month]+1):
+            if _month == 1:
+                d = 6
+            for _day in range(1, months[_month] + 1):
                 day_id = _day
-                d += 1
                 week_id = w
+                month_id = _month
+                d += 1
 
-                if _day > 25 :
-                    d += 1
+                if _day > 25:  # day >= 26: month = month
+                    if _day == 26: d = 1
                     week_id = 1
                     month_id = _month + 1
 
+                    if _month == 12:
+                        month_id = 1
+                        quater_id = 1
+                        year_id = _year + 1
 
-                if _month == 12:
-                    month_id = 1
-                    quater_id = 1
+                    if _month == 3 or _month == 6 or _month == 9:
+                        quater_id = quaters[_month] + 1
 
-                if d == 7:
-                    d = 0
+                if _day < 26 and d == 7:
+                    d = 1
                     w += 1
+                    if w > 4: w = 4
+                # done id date
 
-
+# next: insert date to DB and fake transaction
 
 
 if __name__ == "__main__":
