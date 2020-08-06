@@ -40,7 +40,7 @@ class DataBase:
             "dim_retailer":"INSERT INTO dim_retailer (name) VALUES  (%s)",
             "dim_week":"INSERT INTO dim_week (id, _week) VALUES  (%s, %s)",
             "dim_years":"INSERT INTO dim_years (id, _year) VALUES  (%s, %s)",
-            "dim_date":"INSERT INTO dim_years (id,day,week,month,quater,year) VALUES  (%s,%s,%s,%s,%s,%s)"
+            "dim_date":"INSERT INTO dim_date (id,day,week,month,quater,year) VALUES  (%s,%s,%s,%s,%s,%s)"
 
         }
 
