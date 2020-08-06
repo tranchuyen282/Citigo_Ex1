@@ -1,0 +1,36 @@
+docker run --name citigo_mysql --network mysql -v /home/citigo/mysql_data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.7
+
+docker run --name myadmin -d --network mysql -p 8081:80 -e PMA_HOST=citigo_mysql phpmyadmin/phpmyadmin
+
+docker run --name citigo_mysql -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 mysql:latest
+
+
+docker:
+pull image: sudo docker pull image_name
+docker images: Liệt kê các images hiện có
+
+docker rmi {image_id/name}: Xóa một image
+
+docker ps: Liệt kê các container đang chạy
+
+docker ps -a: Liệt kê các container đã tắt
+
+docker rm -f {container_id/name}: Xóa một container
+
+docker start {new_container_name}: Khởi động một container
+
+docker exec -it {new_container_name} /bin/bash: Truy cập vào container đang chạy
+
+
+
+docker run -d -p 8080:8080 -v /home/chuyentd/citigo/code/dags/:/usr/local/airflow/dags puckel/docker-airflow webserver
+docker exec -ti <container name> bash
+
+
+edit file:
+docker cp <container-name>:/path/to/file/in/container .
+docker cp <file> <container-name>:/path/to/file/in/container
+
+
+chuyenkv'@'%' identified by 'Chuyen123456a@'
+root 123456
