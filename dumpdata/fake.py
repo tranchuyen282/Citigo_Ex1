@@ -1,8 +1,8 @@
 import random
 import string
 
-from Citigo_Ex1.dumpdata import Database
-
+#from Citigo_Ex1.dumpdata import Database
+import Database
 db = Database.DataBase()
 
 def random_int(start, end):
@@ -66,8 +66,9 @@ def insert_year():
         list_year.append((i,i))
     db.insert_to("dim_years",list_year)
 
-def get_quater_id():
-    print()
+def insert_date():
+    list_date = get_date()
+    db.insert_to("dim_date", list_date)
 
 
 # input: dd/mm/yyyy
@@ -76,8 +77,9 @@ def get_date():
     listDate = []
     months = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     quaters = [0, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4]
-    for _year in range(2019, 2020):
+    for _year in range(2019, 2021):
         year_id = _year
+        id = ""
         day_id = 0
         week_id = 0
         month_id = 0
@@ -112,13 +114,24 @@ def get_date():
                     d = 1
                     w += 1
                     if w > 4: w = 4
+                if _day < 10:
+                    id = "0"+str(_day)
+                else: id = id + str(_day)
+                if _month < 10:
+                    id = id + "0" + str(_month)
+                else: id = id = id + str(_month)
+                id = id + str(_year-2000)
                 # done id date
+                print(id,day_id,week_id,month_id,quater_id,year_id)
+                listDate.append((id,day_id,week_id,month_id,quater_id,year_id))
+    return listDate
+
 
 # next: insert date to DB and fake transaction
 
 
 if __name__ == "__main__":
     print()
-    get_date();
-
+    #insert_date()
+    get_date()
 
