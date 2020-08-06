@@ -39,7 +39,10 @@ class DataBase:
             "dim_quater":"INSERT INTO dim_quater (id, _quater) VALUES  (%s, %s)",
             "dim_retailer":"INSERT INTO dim_retailer (name) VALUES  (%s)",
             "dim_week":"INSERT INTO dim_week (id, _week) VALUES  (%s, %s)",
-            "dim_years":"INSERT INTO dim_years (id, _year) VALUES  (%s, %s)"
+            "dim_years":"INSERT INTO dim_years (id, _year) VALUES  (%s, %s)",
+            "dim_date": "INSERT INTO dim_date (id,day,week,month,quater,year) VALUES  (%s,%s,%s,%s,%s,%s)",
+            "fact_transaction": "INSERT INTO fact_transaction (user_id, retailer_id,product_id,date_id, quantity) VALUES  (%s,%s,%s,%s,%s)"
+
         }
 
         self.cur.executemany(query[table], listObj)
