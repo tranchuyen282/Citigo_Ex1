@@ -23,7 +23,7 @@ docker exec -it {new_container_name} /bin/bash: Truy cập vào container đang 
 
 
 
-docker run -d -p 8080:8080 -v /home/chuyentd/citigo/code/dags/:/usr/local/airflow/dags puckel/docker-airflow webserver
+docker run -d -p 8080:8080 -v /home/chuyentd/citigo/code/dags/:/usr/local/airflow/dags  -v /home/chuyentd/citigo/code/code/:/usr/local/airflow/code puckel/docker-airflow webserver
 docker exec -ti <container name> bash
 
 
@@ -34,3 +34,5 @@ docker cp <file> <container-name>:/path/to/file/in/container
 
 chuyenkv'@'%' identified by 'Chuyen123456a@'
 root 123456
+
+# start >> [insertDataTableDay, insertDataTableWeek, insertDataTableMonth, insertDataTableQuater, insertDataTableYear] >> insertDataTableDate >> insertDataTableUser >> insertDataTableRetailer >> insertDataTableProduct >> insertDataTableTransaction

@@ -1,0 +1,38 @@
+SELECT dim_retailer.id, dim_retailer.name, dim_product.product_name,
+		SUM(fact_transaction.quantity) as total
+FROM fact_transaction
+INNER JOIN dim_retailer ON dim_retailer.id = fact_transaction.retailer_id
+INNER JOIN dim_product ON dim_product.id = fact_transaction.product_id
+WHERE fact_transaction.date_id = '010119'
+GROUP BY dim_retailer.id, dim_retailer.name, dim_product.product_name
+
+
+
+SELECT dim_retailer.id, dim_retailer.name, dim_product.product_name,
+		SUM(fact_transaction.quantity) as total,
+        dim_date.month, dim_date.year
+FROM fact_transaction
+INNER JOIN dim_retailer ON dim_retailer.id = fact_transaction.retailer_id
+INNER JOIN dim_product ON dim_product.id = fact_transaction.product_id
+INNER JOIN dim_date ON (dim_date.id = fact_transaction.date_id AND dim_date.month = 6 AND dim_date.year = 2020)
+GROUP BY dim_retailer.id, dim_retailer.name, dim_product.product_name, dim_date.month, dim_date.year
+
+
+SELECT dim_retailer.id, dim_retailer.name, dim_product.product_name,
+		SUM(fact_transaction.quantity) as total,
+        dim_date.quater, dim_date.year
+FROM fact_transaction
+INNER JOIN dim_retailer ON dim_retailer.id = fact_transaction.retailer_id
+INNER JOIN dim_product ON dim_product.id = fact_transaction.product_id
+INNER JOIN dim_date ON (dim_date.id = fact_transaction.date_id AND dim_date.year = 2020)
+GROUP BY dim_retailer.id, dim_retailer.name, dim_product.product_name, dim_date.quater, dim_date.year
+
+
+SELECT dim_retailer.id, dim_retailer.name,
+		SUM(fact_transaction.quantity) as total,
+        dim_date.quater, dim_date.year
+FROM fact_transaction
+INNER JOIN dim_retailer ON dim_retailer.id = fact_transaction.retailer_id
+INNER JOIN dim_date ON (dim_date.id = fact_transaction.date_id  AND dim_date.year = 2020)
+GROUP BY dim_retailer.id, dim_retailer.name, dim_date.quater, dim_date.year
+
