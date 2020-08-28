@@ -17,5 +17,21 @@ FROM {{params.table_name}} WITH (NOLOCK)
 {{params.where_condition}}
 ORDER BY {{params.order_by}};
 
+////
+
+SELECT
+  {{params.columns}},{{params.server_key}} as ServerKey{{params.ext_columns}}
+FROM {{params.table_name}} WITH (NOLOCK)
+{{params.join}}
+{{params.where_condition}}
+WHERE
+  {{params.table_name}}.Id > 0
+  AND {{params.table_name}}.Code NOT LIKE 'kvdelete%'
+  AND ({{params.table_name}}.Code NOT LIKE 'test%' OR {{params.table_name}}.Code = 'testcos')
+  AND {{params.table_name}}.Code NOT IN ('shisedo','Testfnb6','Testfnb2','Testfnb7','xoaitest9','hamycoffee2','thecfhouse','Testfnb5','dcoffee62','barcafetest1','testz12','xanh')
+ORDER BY {{params.order_by}};
+
+
 Note: vì sao ko dùng 2 abstract basemodel và dimmodel????
+
 https://gitlab.citigo.com.vn/users/sign_in?auto_sign_in=false
