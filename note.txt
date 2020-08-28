@@ -36,3 +36,5 @@ chuyenkv'@'%' identified by 'Chuyen123456a@'
 root 123456
 
 # start >> [insertDataTableDay, insertDataTableWeek, insertDataTableMonth, insertDataTableQuater, insertDataTableYear] >> insertDataTableDate >> insertDataTableUser >> insertDataTableRetailer >> insertDataTableProduct >> insertDataTableTransaction
+
+4,455,752

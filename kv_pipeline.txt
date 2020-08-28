@@ -1,0 +1,21 @@
+dlk_valid_table ~ valid_tables  in schema_dlk
+write data to parquet: 
+file_name = self.filename.format(format_name)
+
+
+etl_server = { "101": { "conn": "KiotVietRelease", "table": ["InventoryTracking", "OrderSupplier","Product","PurchaseOrder","Invoice","Customer"] }, "102": { "conn": "KiotVietFnB", "table": "all", "except_table": ["DeliveryInfo", "ProductBatchExpire", "OrderSupplier", "OrderSupplierDetail"] }, "103": { "conn": "KiotVietPromotion", "table": ["Campaign"] } }
+
+serve_key = 101
+
+
+1. schema_dlk.py
+ class ExtractSQL
+SELECT
+  {{params.columns}},{{params.server_key}} as ServerKey{{params.ext_columns}}
+FROM {{params.table_name}} WITH (NOLOCK)
+{{params.join}}
+{{params.where_condition}}
+ORDER BY {{params.order_by}};
+
+Note: vì sao ko dùng 2 abstract basemodel và dimmodel????
+https://gitlab.citigo.com.vn/users/sign_in?auto_sign_in=false

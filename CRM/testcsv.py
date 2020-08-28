@@ -1,3 +1,3 @@
-blob = ['storage-tutorial/sample_csv.log-2020', 'storage-tutorial/sample_image.log', 'storage-tutorial/sample_text.txt', 'storage-tutorial/test.log-2020087']
-ls = [f for f in blob if '.log' in f]
-print(ls)
+etl_server = { "101": { "conn": "KiotVietRelease", "table": ["InventoryTracking", "OrderSupplier","Product","PurchaseOrder","Invoice","Customer"] }, "102": { "conn": "KiotVietFnB", "table": "all", "except_table": ["DeliveryInfo", "ProductBatchExpire", "OrderSupplier", "OrderSupplierDetail"] }, "103": { "conn": "KiotVietPromotion", "table": ["Campaign"] } }
+for server_key, server_data in etl_server.items():
+    print(server_key,server_data)
