@@ -1,3 +1,4 @@
-etl_server = { "101": { "conn": "KiotVietRelease", "table": ["InventoryTracking", "OrderSupplier","Product","PurchaseOrder","Invoice","Customer"] }, "102": { "conn": "KiotVietFnB", "table": "all", "except_table": ["DeliveryInfo", "ProductBatchExpire", "OrderSupplier", "OrderSupplierDetail"] }, "103": { "conn": "KiotVietPromotion", "table": ["Campaign"] } }
-for server_key, server_data in etl_server.items():
-    print(server_key,server_data)
+a = [1,2,3,4,5,6]
+b = [1,2,7,8,9]
+c = [i for i in b if i not in a]
+print(c)
