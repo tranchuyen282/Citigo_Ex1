@@ -18,8 +18,10 @@ while not is_break:
         try:
             datas= soup.find_all('h3', class_='title-news')
             for data in datas:
-                title = data.find('a')
-                if title:
+                news = data.find('a')
+                if news:
+                    title = news.get('title')
+                    url_of_new = news.get('href')
                     print(title.get('title'))
                 else:
                     print('d co gi ca')
