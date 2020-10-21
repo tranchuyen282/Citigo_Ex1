@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="on" http-equiv="x-dns-prefetch-control"/>
+        <link href="//vcdn.dantri.com.vn" rel="dns-prefetch"/>
+        <link href="//icdn.dantri.com.vn" rel="dns-prefetch"/>
+        <link href="//cdnweb.dantri.com.vn" rel="dns-prefetch"/>
+        <link href="//cdndulich.dantri.com.vn" rel="dns-prefetch"/>
+        <link href="//cdnduhoc.dantri.com.vn" rel="dns-prefetch"/>
+        <link href="//cdnmobile.dantri.com.vn" rel="dns-prefetch"/>
+        <link href="//webapi.dantri.com.vn" rel="dns-prefetch"/>
+        <link href="//captcha.dantri.com.vn" rel="dns-prefetch"/>
+        <link href="//comment.dantri.com.vn" rel="dns-prefetch"/>
+        <link href="//fonts.googleapis.com" rel="dns-prefetch"/>
+        <link href="//cdn.jwplayer.com" rel="dns-prefetch"/>
+        <link href="//www.googletagmanager.com" rel="dns-prefetch"/>
+        <link href="//media1.admicro.vn" rel="dns-prefetch"/>
+        <link href="//logsbin.dantri.com.vn" rel="dns-prefetch"/>
+        <link href="//www.google-analytics.com" rel="dns-prefetch"/>
+        <link href="//www.googletagmanager.com" rel="dns-prefetch"/>
+        <script>
+            window.wDataLayer = {"platform":"web","page_type":"article","item_id":"20201021104528371","cate_id":"20","tags":["bão số 8","phạm vi ảnh hưởng rộng","Bắc Trung Bộ"],"cate_name":"Xã hội","cate_list":null,"sub_cates":null,"isBlockedAds":0,"label":"Web","author_id":null,"published_date":"2020-10-21T10:51:28.543+07:00"};
+        </script>
+        <script>
+            window.DONGLOGS_WAITDOCREADY=0,function(e,t){var o,n;"object"==typeof exports&&"undefined"!=typeof module?module.exports=t():"function"==typeof define&&define.amd?define(t):(e=e||self,o=e.Cookies,(n=e.Cookies=t()).noConflict=function(){return e.Cookies=o,n})}(this,function(){"use strict";function a(e){for(var t=1;t<arguments.length;t++){var o=arguments[t];for(var n in o)e[n]=o[n]}return e}var w={read:function(e){return e.replace(/%3B/g,";")},write:function(e){return e.replace(/;/g,"%3B")}};return function t(s,i){function o(e,t,o){if("undefined"!=typeof document){"number"==typeof(o=a({},i,o)).expires&&(o.expires=new Date(Date.now()+864e5*o.expires)),o.expires&&(o.expires=o.expires.toUTCString()),e=w.write(e).replace(/=/g,"%3D"),t=s.write(String(t),e);var n="";for(var r in o)o[r]&&(n+="; "+r,!0!==o[r]&&(n+="="+o[r].split(";")[0]));return document.cookie=e+"="+t+n}}return Object.create({set:o,get:function(e){if("undefined"!=typeof document&&(!arguments.length||e)){for(var t=document.cookie?document.cookie.split("; "):[],o={},n=0;n<t.length;n++){var r=t[n].split("="),i=r.slice(1).join("="),a=w.read(r[0]).replace(/%3D/g,"=");if(o[a]=s.read(i,a),e===a)break}return e?o[e]:o}},remove:function(e,t){o(e,"",a({},t,{expires:-1}))},withAttributes:function(e){return t(this.converter,a({},this.attributes,e))},withConverter:function(e){return t(a({},this.converter,e),this.attributes)}},{attributes:{value:Object.freeze(i)},converter:{value:Object.freeze(s)}})}(w,{path:"/"})}),window.webLog=window.webLog||{},function(r){var i=r.aff=r.aff||{};i._params="_waff_params",i._items="_waff_items",i.init=function(){try{var e=document.location.search;if(!e||-1===e.indexOf("aff_id"))return;for(var t={},o=new URLSearchParams(document.location.search).entries(),n={done:!1};!n.done;)(n=o.next()).value&&(t[n.value[0]]=n.value[1]);i._affParams=t,r.store.setItem(i._params,t)}catch(e){}},i.convert=function(){var e=i._affParams||r.store.getItem(i._params);if(!e)return"affParams not found";var t=i._affParams||JSON.parse(e);if(!t.aff_id)return"aff_id not found";var o=i._cartItems||r.store.getItem(i._items);return o?(t.cart_items=i._cartItems||JSON.parse(o),t.cart_items.constructor!==Array?"cartItems is invalid []":(t.event="Conversion",t.moment=(new Date).toISOString(),t.host=document.location.host,t.uuid=r.services.default.getId(),t.session_id=r.services.default.getSessionId(),t.user_agent=r.client.userAgent,r.http.postJson(i.POSTBACK,t,function(){i._affParams=null,i._cartItems=null,r.store.setItem(i._params,""),r.store.setItem(i._items,""),console.log("Conversion posted.")}),console.log("Postback",t),!0)):"cartItems not found"}}(window.webLog),window.webLog=window.webLog||{},window.webLog.client={},function(e){e.userAgent=(navigator.userAgent||navigator.vendor||window.opera||"").substr(0,250),e.browser=function(){var e=!!window.chrome&&!!window.chrome.webstore;if(e)return"Chrome";if("undefined"!=typeof InstallTrigger)return"Firefox";if(/constructor/i.test(window.HTMLElement)||"[object SafariRemoteNotification]"===(!window.safari||void 0!==window.safari&&window.safari.pushNotification).toString())return"Safari";var t=!!document.documentMode;if(t)return"IE";var o=!!window.opr&&!!window.opr.addons||!!window.opera||0<=navigator.userAgent.indexOf(" OPR/");return o?"Opera":!t&&window.StyleMedia||!(!e&&!o||!window.CSS)}(),e.os=function(){var e=navigator.userAgent||navigator.vendor||window.opera;if(/windows phone/i.test(e))return"Windows Phone";if(/android/i.test(e))return"Android";return!/iPad|iPhone|iPod/.test(e)||window.MSStream?"unknown":"iOS"}(),e.newId=function(e){var t,o,n="";for(e=e||32,t=0;t<e;t++)o=16*Math.random()|0,8!==t&&12!==t&&16!==t&&20!==t||(n+="-"),n+=(12===t?4:16===t?3&o|8:o).toString(16);return n},e.validId=function(e){return e&&36===e.length&&e.match(/^[a-z0-9]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{12}$/)}}(window.webLog.client),window.webLog=window.webLog||{},function(e){"use strict";e=e||window;var o=[],n=!1,r=!1;function i(){if(!n){n=!0;for(var e=0;e<o.length;e++)o[e].fn.call(window,o[e].ctx);o=[]}}function a(){"complete"===document.readyState&&i()}e.ondocReady=function(e,t){if("function"!=typeof e)throw new TypeError("callback for docReady(fn) must be a function");n?setTimeout(function(){e(t)},1):(o.push({fn:e,ctx:t}),"complete"===document.readyState||!document.attachEvent&&"interactive"===document.readyState?setTimeout(i,1):r||(document.addEventListener?(document.addEventListener("DOMContentLoaded",i,!1),window.addEventListener("load",i,!1)):(document.attachEvent("onreadystatechange",a),window.attachEvent("onload",i)),r=!0))}}(window.webLog),window.webLog=window.webLog||{},window.webLog.dom={},function(e){e.harvest=function(e,o,n){var t=document.querySelectorAll(e);if(!t.length)return null;var r={};return o.forEach(function(e){r[e]=[]}),t.forEach(function(t){o.forEach(function(e){t.hasAttribute(e)?r[e].push(t.getAttribute(e)):n&&r[e].push(null)})}),r},e.scrolledTo=function(e){var t=window.$;if(t){var o=t(window).scrollTop(),n=o+t(window).height();try{var r=t(e).offset().top,i=r+t(e).height()}catch(e){return}return i<=n&&o<=r&&r}}}(window.webLog.dom),window.webLog=window.webLog||{},window.webLog.http={},function(e){e.postJson=function(e,t,o){var n=new XMLHttpRequest;n.open("POST",e,!0),n.setRequestHeader("Content-Type","application/json; charset=utf-8"),n.timeout=3e3,n.onreadystatechange=function(){4===n.readyState&&"function"==typeof o&&o(n.status,n.responseText)},n.send(JSON.stringify(t))}}(window.webLog.http),window.webLog=window.webLog||{},function(r){r.inspectlet=function(o,e){var t=Math.round(e/30),n=r.store.getItem("__insp");(n||(n=Math.floor(Math.random()*t+1).toString(),r.store.setItem("__insp",n)))&&"456"===n&&(window.__insp=window.__insp||[],window.__insp.push(["wid",o]),window.__insp.push(["identify",r.services.default.getId()]),setTimeout(function(){var e,t;void 0===window.__inspld&&(window.__inspld=1,(e=document.createElement("script")).type="text/javascript",e.async=!0,e.id="inspsync",e.src=("https:"===document.location.protocol?"https":"http")+"://cdn.inspectlet.com/inspectlet.js?wid="+o+"&r="+Math.floor((new Date).getTime()/36e5),(t=document.getElementsByTagName("script")[0]).parentNode.insertBefore(e,t))},0))}}(window.webLog),window.webLog=window.webLog||{},window.webLog.store={},function(e){e.method="cookie",e.getItem=function(e){var t=window.Cookies,o="."+window.COOKIE_DOMAIN;try{var n=window.localStorage.getItem(e)||t.get(e)||void 0}catch(e){}return n&&t.set(e,n,{domain:o}),n},e.setItem=function(e,t){var o=window.Cookies,n="."+window.COOKIE_DOMAIN;try{return o.set(e,t,{domain:n})}catch(e){return}},e.session={getItem:function(e){try{return window.sessionStorage.getItem(e)}catch(e){return}},setItem:function(e,t){try{return window.sessionStorage.setItem(e,t),e}catch(e){return}}}}(window.webLog.store),window.webLog=window.webLog||{},function(i){var a="//rec.donglogs.com/heatmap",t=[];function o(e){var t,o,n;null==(e=e||window.event).pageX&&null!=e.clientX&&(o=(t=e.target&&e.target.ownerDocument||document).documentElement,n=t.body,e.pageX=e.clientX+(o&&o.scrollLeft||n&&n.scrollLeft||0)-(o&&o.clientLeft||n&&n.clientLeft||0),e.pageY=e.clientY+(o&&o.scrollTop||n&&n.scrollTop||0)-(o&&o.clientTop||n&&n.clientTop||0))}function n(e,t,o,n){var r={event:e,moment:(new Date).toISOString(),url:document.location.href,uuid:i.services.default.getId(),width:window.innerWidth,height:window.innerHeight,page_y:Math.floor(window.pageYOffset),click_x:t,click_y:o,move_coords:n,abtest:i._abtest||null};i.http.postJson(a,r)}window.TRACK_HEAT&&(document.onmousemove=function(e){o(e),t.push([e.pageX,e.pageY]),9<t.length&&(n("Move",null,null,JSON.stringify(t)),t=[])},document.onclick=function(e){o(e),n("Click",e.pageX,e.pageY,null)})}(window.webLog),window.webLog=window.webLog||{},window.webLog.services=window.webLog.services||{},function(e){var t,o,n="default",r="__wuid",i="__wssid",a=e.store,s=e.http,w=e.client;function c(e,t){var o,n=typeof e;if(null==e||"string"==n)o=e;else if("object"==n)o=t?e:e instanceof Array?JSON.stringify(e.map(function(e){return c(e,1)})):JSON.stringify(e);else try{o=e.toString()}catch(e){o=void 0}return o}function d(){return o||((o=a.session.getItem(i))||(o=w.newId(6),a.session.setItem(i,o)),o)}function u(e){if(!e)return{};var t=document.createElement("a");return t.href=e,t}function f(){return t||((t=a.getItem(r))||(e=(window.location.hash||"").toLowerCase(),(t=w.validId(e)?e:null)&&void 0!==a.method&&a.setItem(r,t),t&&void 0===a.method&&window.WEBLOG_ALLOW_URL_HASH_WUID),t||(t=w.newId(),void 0!==a.method?a.setItem(r,t):window.WEBLOG_ALLOW_URL_HASH_WUID,t));var e}e.services[n]={enabled:!0,loaded:function(){return"string"==typeof window.WEBLOG_API_DEFAULT&&"object"==typeof e.store&&window.WEBLOG_API_DEFAULT.length},getId:f,getSessionId:d,identify:function(e,t,o){return"to-do"},track:function(e,t,o,n){var r=function(e,t){var o={};o.event=e,o.moment=(new Date).toISOString(),o.platform=window.WEBLOG_PLATFORM,o.log_ver=window.WEBLOG_VERSION,o.uuid=f(),o.session_id=d(),o.user_agent=w.userAgent,o.browser=w.browser,o.storage=a.method,o.protocol=window.location.protocol,o.host=window.location.host,o.pathname=window.location.pathname,o.search=window.location.search,o.hash=window.location.hash,o.referrer=document.referrer.substr(0,250),o.ref_host=u(o.referrer).host,function(e){var t=a.session.getItem("_sessionRef"),o=a.session.getItem("_sessionRefHost");t||(t=document.referrer.substr(0,250),o=u(t).host,t||(o=t="Direct"),a.session.setItem("_sessionRef",t),a.session.setItem("_sessionRefHost",o));e.session_referrer=t,e.session_ref_host=o}(o);var n,r=a.getItem("fcm_token");r&&(o.fcm_token=r);if("object"==typeof window.wDataLayer)for(n in window.wDataLayer)o[n]=c(window.wDataLayer[n]);if(t&&"object"==typeof t)for(n in t)o[n]=c(t[n]);else o.label=c(t);return o}(e,t);return o="function"==typeof o?(n=o,window.WEBLOG_API_DEFAULT):o||window.WEBLOG_API_DEFAULT,s.postJson(o,r,n),r},trackJSErr:function(e,t,o,n,r){var i={event:"JSErr"};i.moment=(new Date).toISOString(),i.uuid=f(),i.session_id=d(),i.user_agent=w.userAgent,i.browser=w.browser,i.storage=a.method,i.protocol=window.location.protocol,i.host=window.location.host,i.pathname=window.location.pathname,i.search=window.location.search,i.hash=window.location.hash,i.referrer=document.referrer.substr(0,250),i.message=e||null,i.source=t||null,i.lineno=o||null,i.colno=n||null,i.error=(r||"").toString(),s.postJson("//logsbin.dantri.com.vn/rec/dantri_com_vn_error",i)}},e._track=e.services[n].track}(window.webLog),window.webLog=window.webLog||{},window.webLog.services=window.webLog.services||{},window.webLog,window.webLog=window.webLog||{},function(s){var o=[];s.track=function(t,r,i){var a="function"==typeof i;try{window.webLog.preTracking&&window.webLog.preTracking[window.WEBLOG_PLATFORM][t]()}catch(e){}(function(){if(o.length)return o;for(var e in s.services)o.push(e);return o})().forEach(function(o){var n,e=s.services[o];e&&e.enabled&&e.loaded()?n=e.track(t,r,function(e,t){a&&i(o,n,e,t)}):a&&i(o,null,null,null)})}}(window.webLog),window.WEBLOG_API_DEFAULT="//logsbin.dantri.com.vn/rec/dantri_com_vn",window.WEBLOG_ALLOW_URL_HASH_WUID=!1,window.WEBLOG_PLATFORM=window.WEBLOG_PLATFORM||"web",window.COOKIE_DOMAIN=window.COOKIE_DOMAIN||"dantri.com.vn",window.WEBLOG_VERSION="0.0.98",window.WEBLOG_TIMESTAMP=Date.now(),function(t){function e(){var e=(document.title||"").substr(0,250);t.track("Pageview",{title:e},t.tracked)}0===window.DONGLOGS_WAITDOCREADY?e():t.ondocReady(e)}(window.webLog);/**2020-07-24T05:02:50.662Z**/
+        </script>
+        <meta content="index,follow,all" name="robots"/>
+        <title>Bão số 8 đổ thẳng vào miền Trung, phạm vi ảnh hưởng rất rộng | Báo Dân trí</title>
+        <meta content="(Dân trí) - Đại diện cơ quan khí tượng thủy văn cho biết, bão số 8 có phạm vi ảnh hưởng rất rộng. Dự báo, cơn bão này sẽ vào đất liền các tỉnh Bắc Trung Bộ và Trung Trung Bộ trong khoảng ngày 24/10-25/10." name="description">
+        <meta content="dantri,báo điện tử dantri,thời tiết,tin tức,tin nhanh,thể thao,dự báo thời tiết,tin the thao,thể thao 24h,giá vàng hôm nay,tin the gioi,đọc báo,tin moi,giá vàng,thời tiết hôm nay,tin tức online,bóng đá việt nam,pháp luật,dự báo thời tiết hôm nay,tin tức 24 giờ,tin nong,thời tiết hà nội,lịch thi đấu bóng đá hôm nay,thời sự,an ninh,tin tức trong ngày" name="keywords">
+        <meta content="Bão số 8 đổ thẳng vào miền Trung, phạm vi ảnh hưởng rất rộng" name="title">
+        <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+        <meta content="yes" name="apple-mobile-web-app-capable"/>
+        <meta content="dantri.com.vn" name="apple-mobile-web-app-title"/>
+        <meta content="dantri.com.vn" name="copyright"/>
+        <meta content="dantri.com.vn" name="author"/>
+        <!-- Schema.org markup for Google+ -->
+        <meta content="W60o5FIiNTC4qM0e14lVCrmQOH7MDm2jy50E3fvvTHs" name="google-site-verification"/>
+        <meta content="Bão số 8 đổ thẳng vào miền Trung, phạm vi ảnh hưởng rất rộng" itemprop="name"/>
+        <meta content="https://icdn.dantri.com.vn/zoom/1200_630/2020/10/21/baoso-81603251711484-1603252259994.jpg" itemprop="image"/>
+        <!-- Twitter Card data -->
+        <meta content="article" name="twitter:card"/>
+        <meta content="Báo điện tử Dân Trí" name="twitter:site"/>
+        <meta content="Bão số 8 đổ thẳng vào miền Trung, phạm vi ảnh hưởng rất rộng" name="twitter:title"/>
+        <meta content="(Dân trí) - Đại diện cơ quan khí tượng thủy văn cho biết, bão số 8 có phạm vi ảnh hưởng rất rộng. Dự báo, cơn bão này sẽ vào đất liền các tỉnh Bắc Trung Bộ và Trung Trung Bộ trong khoảng ngày 24/10-25/10." name="twitter:description"/>
+        <meta content="dantri.com.vn" name="twitter:creator"/>
+        <meta content="https://icdn.dantri.com.vn/zoom/1200_630/2020/10/21/baoso-81603251711484-1603252259994.jpg" name="twitter:image"/>
+        <!-- Open Graph data -->
+        <meta content="article" property="og:type">
+        <meta content="Báo điện tử Dân Trí" property="og:site_name">
+        <meta content="Bão số 8 đổ thẳng vào miền Trung, phạm vi ảnh hưởng rất rộng" property="og:title">
+        <meta content="https://dantri.com.vn/xa-hoi/bao-so-8-do-thang-vao-mien-trung-pham-vi-anh-huong-rat-rong-20201021104528371.htm" property="og:url">
+        <meta content="http://icdn.dantri.com.vn/zoom/1200_630/2020/10/21/baoso-81603251711484-1603252259994.jpg" property="og:image">
+        <meta content="(Dân trí) - Đại diện cơ quan khí tượng thủy văn cho biết, bão số 8 có phạm vi ảnh hưởng rất rộng. Dự báo, cơn bão này sẽ vào đất liền các tỉnh Bắc Trung Bộ và Trung Trung Bộ trong khoảng ngày 24/10-25/10." property="og:description">
+        <meta content="vi_VN" property="og:locale">
+        <meta content="telephone=no" name="format-detection"/>
+        <meta content="https://icdn.dantri.com.vn/2020/10/21/baoso-81603251711484-1603252259994.jpg" name="thumbnail">
+        <meta content="https://icdn.dantri.com.vn/zoom/1200_630/2020/10/21/baoso-81603251711484-1603252259994.jpg" property="og:image:secure_url">
+        <meta content="164035690775918" property="fb:app_id"/>
+        <meta content="Document" name="resource-type"/>
+        <meta content="Global" name="distribution"/>
+        <meta content="345033318906366" property="fb:pages"/>
+        <meta content="https://www.facebook.com/baodantridientu" property="article:author"/>
+        <meta content="https://www.facebook.com/baodantridientu" property="article:publisher"/>
+        <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+        <meta content="General" http-equiv="audience"/>
+        <meta content="vi" http-equiv="content-language">
+        <meta content="1 days" name="revisit-after"/>
+        <link href="https://dantri.com.vn/xa-hoi/bao-so-8-do-thang-vao-mien-trung-pham-vi-anh-huong-rat-rong-20201021104528371.htm" rel="canonical"/>
+        <link data-href="/bundle/static/dantri.min.css?_=7cf2a43c" href="https://cdnweb.dantri.com.vn/bundle/static/dantri.min.css?_=7cf2a43c" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700&amp;display=swap&amp;subset=vietnamese" rel="stylesheet">
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-PM6G9ZN');
+        </script>
+        <!-- End Google Tag Manager -->
+        <link href="https://amp.dantri.com.vn/xa-hoi/bao-so-8-do-thang-vao-mien-trung-pham-vi-anh-huong-rat-rong-20201021104528371.htm" rel="amphtml"/>
+        <meta content="600" http-equiv="refresh"/>
+        </link></meta></meta></meta></meta></meta></meta></meta></meta></meta></meta></meta></meta></meta>
+    </head>
+    <body class="articlev2 dtv2" data-isrc="articlev2" xds-provider="">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-PM6G9ZN" style="display:none;visibility:hidden" width="0"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header class="dt-header">
+            <div class="dt-header___content">
+                <div class="container">
+                    <div class="dt-header__logo">
+                        <a href="/" title="Báo điện tử Dân trí - Tin tức cập nhật liên tục 24/7">
+                        <img alt="Báo điện tử Dân trí - Tin tức cập nhật liên tục 24/7" src="https://cdnweb.dantri.com.vn/bundle/static/assets/logo_dantri.png?v=1021133940"/>
+                        </a>
+                    </div>
+                    <div id="xds-2"></div>
+                    <form action="/tim-kiem.htm" class="search-box" method="GET">
+                        <input autocomplete="off" class="form-control search-box__input" id="js-search-input" name="s" placeholder="Tìm kiếm tin tức" type="text"/>
+                        <button class="btn search-box__btn" type="submit">
+                        <i class="dt-icon icon-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <nav class="site-menu">
+                <div class="container">
+                    <ol class="site-menu__list list-unstyled">
+                        <li class="home">
+                            <a href="/" title="Trang chủ">
+                            <i class="dt-icon icon-home"></i>
+                            </a>
+                        </li>
+                        <li class="dropdown dropdown--hover">
+                            <a class="" data-cat-id="0" data-utm="Article|MenuMain|1" href="/video-page.htm">Video</a>
+                        </li>
+                        <li class="dropdown dropdown--hover">
+                            <a class="" data-cat-id="728" data-utm="Article|MenuMain|2" href="/su-kien.htm" title="Tin tức sự kiện nóng mới nhất, cập nhật liên tục">Sự kiện</a>
+                        </li>
+                        <li class="dropdown dropdown--hover">
+                            <a class="active" data-cat-id="20" data-utm="Article|MenuMain|3" href="/xa-hoi.htm" title="Xã hội  - Tin tức đa dạng về xã hội, gia đình, du lịch, mẹo vặt cuộc sống">Xã hội</a>
+                            <div class="dropdown__content">
+                                <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                    <li>
+                                        <a data-utm="Article|MenuCate|1" href="/xa-hoi/chinh-tri.htm" title="Chính trị">Chính trị</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|2" href="/xa-hoi/phong-su-ky-su.htm" title="Phóng sự-Ký sự">Phóng sự-Ký sự</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|3" href="/xa-hoi/giao-thong.htm" title="Giao thông">Giao thông</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|4" href="/xa-hoi/moi-truong.htm" title="Môi trường">Môi trường</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|5" href="/xa-hoi/ho-so.htm" title="Hồ sơ">Hồ sơ</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="dropdown dropdown--hover">
+                            <a class="" data-cat-id="36" data-utm="Article|MenuMain|4" href="/the-gioi.htm" title="Tin tức thế giới 24h - Kinh tế, An ninh quân sự thế giới">Thế giới</a>
+                            <div class="dropdown__content">
+                                <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                    <li>
+                                        <a data-utm="Article|MenuCate|1" href="/the-gioi/bau-cu-tong-thong-my-2020.htm" title="Bầu cử tổng thống Mỹ 2020">Bầu cử tổng thống Mỹ 2020</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|2" href="/the-gioi/chau-a.htm" title="Châu Á">Châu Á</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|3" href="/the-gioi/eu-nga.htm" title="EU &amp; Nga">EU &amp; Nga</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|4" href="/the-gioi/chau-my.htm" title="Châu Mỹ">Châu Mỹ</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|5" href="/the-gioi/diem-nong.htm" title="Điểm nóng">Điểm nóng</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|6" href="/the-gioi/tu-lieu.htm" title="Tư liệu">Tư liệu</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|7" href="/the-gioi/kieu-bao.htm" title="Kiều bào">Kiều bào</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="dropdown dropdown--hover">
+                            <a class="" data-cat-id="26" data-utm="Article|MenuMain|5" href="/the-thao.htm" title="Tin tức thể thao 24h, lịch thi đấu, kết quả, video clip">Thể thao</a>
+                            <div class="dropdown__content">
+                                <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                    <li>
+                                        <a data-utm="Article|MenuCate|1" href="/the-thao/bong-da-trong-nuoc.htm" title="Bóng đá trong nước">Bóng đá trong nước</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|2" href="/the-thao/bong-da-chau-au.htm" title="Bóng đá Châu Âu">Bóng đá Châu Âu</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|3" href="/the-thao/vo-thuat.htm" title="Võ thuật">Võ thuật</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|4" href="/the-thao/tennis.htm" title="Tennis">Tennis</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|5" href="/the-thao/cac-mon-the-thao-khac.htm" title="Các môn Thể thao khác">Các môn Thể thao khác</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|6" href="/the-thao/hau-truong.htm" title="Hậu trường">Hậu trường</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="dropdown dropdown--hover">
+                            <a class="" data-cat-id="133" data-utm="Article|MenuMain|6" href="/lao-dong-viec-lam.htm" title="Tin tức An sinh xã hội, thông tin đào tạo việc làm">Việc làm</a>
+                            <div class="dropdown__content">
+                                <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                    <li>
+                                        <a data-utm="Article|MenuCate|1" href="/lao-dong-viec-lam/chinh-sach.htm" title="Chính sách">Chính sách</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|2" href="/lao-dong-viec-lam/viec-lam.htm" title="Việc làm">Việc làm</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|3" href="/lao-dong-viec-lam/dao-tao.htm" title="Đào tạo">Đào tạo</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|4" href="/lao-dong-viec-lam/goi-an-sinh-62000-ty-dong.htm" title="Gói an sinh 62.000 tỷ đồng">Gói an sinh 62.000 tỷ đồng</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|5" href="/lao-dong-viec-lam/xuat-khau-lao-dong.htm" title="Xuất khẩu lao động">Xuất khẩu lao động</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|6" href="/lao-dong-viec-lam/chung-toi-noi.htm" title="Chúng tôi nói">Chúng tôi nói</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="dropdown dropdown--hover">
+                            <a class="" data-cat-id="7" data-utm="Article|MenuMain|7" href="/suc-khoe.htm" title="Sức khỏe: Cẩm nang chăm sóc sức khỏe gia đình, cách Phòng Bệnh">Sức khỏe</a>
+                            <div class="dropdown__content">
+                                <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                    <li>
+                                        <a data-utm="Article|MenuCate|1" href="/suc-khoe/ung-thu.htm" title="Ung thư">Ung thư</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|2" href="/suc-khoe/kien-thuc-gioi-tinh.htm" title="Kiến thức giới tính">Kiến thức giới tính</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|3" href="/suc-khoe/tu-van.htm" title="Tư vấn">Tư vấn</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|4" href="/suc-khoe/lam-dep.htm" title="Làm đẹp">Làm đẹp</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|5" href="/suc-khoe/ngay-thay-thuoc-viet-nam.htm" title="Ngày Thầy thuốc Việt Nam">Ngày Thầy thuốc Việt Nam</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|6" href="/suc-khoe/dai-dich-covid-19.htm" title="Đại dịch Covid-19">Đại dịch Covid-19</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="dropdown dropdown--hover">
+                            <a class="" data-cat-id="167" data-utm="Article|MenuMain|8" href="/tam-long-nhan-ai.htm" title="Những số phận không may mắn và Tấm lòng nhân ái">Nhân ái</a>
+                            <div class="dropdown__content">
+                                <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                    <li>
+                                        <a data-utm="Article|MenuCate|1" href="/tam-long-nhan-ai/danh-sach-ung-ho.htm" title="Danh sách ủng hộ">Danh sách ủng hộ</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|2" href="/tam-long-nhan-ai/danh-sach-ket-chuyen.htm" title="Danh sách kết chuyển">Danh sách kết chuyển</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|3" href="/tam-long-nhan-ai/hoan-canh.htm" title="Hoàn cảnh">Hoàn cảnh</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="dropdown dropdown--hover">
+                            <a class="" data-cat-id="76" data-utm="Article|MenuMain|9" href="/kinh-doanh.htm" title="Tin kinh doanh: Thị trường, tài chính, kinh tế, doanh nghiệp">Kinh doanh</a>
+                            <div class="dropdown__content">
+                                <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                    <li>
+                                        <a data-utm="Article|MenuCate|1" href="/kinh-doanh/tai-chinh-dau-tu.htm" title="Tài chính - Đầu tư">Tài chính - Đầu tư</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|2" href="/kinh-doanh/thi-truong.htm" title="Thị trường">Thị trường</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|3" href="/kinh-doanh/doanh-nghiep.htm" title="Doanh nghiệp">Doanh nghiệp</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|4" href="/kinh-doanh/khoi-nghiep.htm" title="Khởi nghiệp">Khởi nghiệp</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|5" href="/kinh-doanh/bao-ve-ntd.htm" title="Bảo vệ NTD">Bảo vệ NTD</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|6" href="/kinh-doanh/bao-hiem.htm" title="Bảo hiểm">Bảo hiểm</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|7" href="/kinh-doanh/quoc-te.htm" title="Quốc tế">Quốc tế</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|8" href="/kinh-doanh/nha-dat.htm" title="Nhà đất">Nhà đất</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="dropdown dropdown--hover">
+                            <a class="" data-cat-id="927" data-utm="Article|MenuMain|10" href="/bat-dong-san.htm" title="Tin tức thị trường bất động sản, nhà đất, dự án mới">Bất động sản</a>
+                            <div class="dropdown__content">
+                                <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                    <li>
+                                        <a data-utm="Article|MenuCate|1" href="/bat-dong-san/du-an.htm" title="Dự án">Dự án</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|2" href="/bat-dong-san/thi-truong.htm" title="Thị trường">Thị trường</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|3" href="/bat-dong-san/nhip-song-do-thi.htm" title="Nhịp sống đô thị">Nhịp sống đô thị</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|4" href="/bat-dong-san/song-xanh.htm" title="Sống xanh">Sống xanh</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="dropdown dropdown--hover">
+                            <a class="" data-cat-id="111" data-utm="Article|MenuMain|11" href="/o-to-xe-may.htm" title="Ô tô xe máy | Thông tin thị trường oto xe máy, giá mua bán xe">Xe ++</a>
+                            <div class="dropdown__content">
+                                <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                    <li>
+                                        <a data-utm="Article|MenuCate|1" href="/o-to-xe-may/thi-truong-xe.htm" title="Thị trường xe">Thị trường xe</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|2" href="/o-to-xe-may/bang-gia-o-to.htm" title="Bảng giá ô tô">Bảng giá ô tô</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|3" href="/o-to-xe-may/van-hoa-xe.htm" title="Văn hoá xe">Văn hoá xe</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|4" href="/o-to-xe-may/tu-van-xe.htm" title="Tư vấn xe">Tư vấn xe</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|5" href="/o-to-xe-may/dua-xe.htm" title="Đua xe">Đua xe</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|6" href="/o-to-xe-may/gia-xe.htm" title="Giá xe">Giá xe</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="dropdown dropdown--hover">
+                            <a class="" data-cat-id="119" data-utm="Article|MenuMain|12" href="/suc-manh-so.htm" title="Sức mạnh số - Tin khoa học công nghệ kỹ thuật mới nhất, nghiên cứu ứng dụng">Sức mạnh số</a>
+                            <div class="dropdown__content">
+                                <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                    <li>
+                                        <a data-utm="Article|MenuCate|1" href="/suc-manh-so/vi-tinh.htm" title="Máy tính - Mạng">Máy tính - Mạng</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|2" href="/suc-manh-so/dien-thoai.htm" title="Di động - Viễn thông">Di động - Viễn thông</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|3" href="/suc-manh-so/dien-may.htm" title="Điện tử tiêu dùng">Điện tử tiêu dùng</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|4" href="/suc-manh-so/nghe-nhin.htm" title="Nghe nhìn">Nghe nhìn</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|5" href="/suc-manh-so/phan-mem-bao-mat.htm" title="Phần mềm - Bảo mật">Phần mềm - Bảo mật</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|6" href="/suc-manh-so/thu-thuat.htm" title="Thủ thuật - Mẹo vặt">Thủ thuật - Mẹo vặt</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|7" href="/suc-manh-so/thi-truong-cong-nghe.htm" title="Thị trường công nghệ">Thị trường công nghệ</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="dropdown dropdown--hover">
+                            <a class="" data-cat-id="25" data-utm="Article|MenuMain|13" href="/giao-duc-huong-nghiep.htm" title="Giáo dục - Thông tin tuyển sinh, du học mới nhất">Giáo dục</a>
+                            <div class="dropdown__content">
+                                <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                    <li>
+                                        <a data-utm="Article|MenuCate|1" href="/giao-duc-huong-nghiep/tin-tuyen-sinh.htm" title="Tin tuyển sinh">Tin tuyển sinh</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|2" href="/giao-duc-huong-nghiep/khuyen-hoc.htm" title="Khuyến học">Khuyến học</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|3" href="/giao-duc-huong-nghiep/guong-sang.htm" title="Gương sáng">Gương sáng</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|4" href="/giao-duc-huong-nghiep/giao-duc-nghe-nghiep.htm" title="Giáo dục - Nghề nghiệp">Giáo dục - Nghề nghiệp</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="dropdown dropdown--hover">
+                            <a class="" data-cat-id="730" data-utm="Article|MenuMain|14" href="/van-hoa.htm">Văn hóa</a>
+                            <div class="dropdown__content">
+                                <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                    <li>
+                                        <a data-utm="Article|MenuCate|1" href="/van-hoa/doi-song-van-hoa.htm" title="Đời sống văn hóa">Đời sống văn hóa</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|2" href="/van-hoa/dien-anh.htm" title="Điện ảnh">Điện ảnh</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|3" href="/van-hoa/am-nhac.htm" title="Âm nhạc">Âm nhạc</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|4" href="/van-hoa/van-hoc.htm" title="Văn học">Văn học</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|5" href="/van-hoa/san-khau-dan-gian.htm" title="Sân khấu - Dân gian">Sân khấu - Dân gian</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|6" href="/van-hoa/hat-giong-tam-hon.htm" title="Hạt giống tâm hồn">Hạt giống tâm hồn</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="dropdown dropdown--hover">
+                            <a class="" data-cat-id="23" data-utm="Article|MenuMain|15" href="/giai-tri.htm" title="Tin tức giải trí mới nhất 24h | showbiz  sao việt và thế giới">Giải trí</a>
+                            <div class="dropdown__content">
+                                <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                    <li>
+                                        <a data-utm="Article|MenuCate|1" href="/giai-tri/sao-viet.htm" title="Sao Việt">Sao Việt</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|2" href="/giai-tri/hollywood.htm" title="Hollywood">Hollywood</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|3" href="/giai-tri/chau-a.htm" title="Châu Á">Châu Á</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|4" href="/giai-tri/thoi-trang.htm" title="Thời trang">Thời trang</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|5" href="/giai-tri/xem-an-choi.htm" title="Xem - Ăn - Chơi">Xem - Ăn - Chơi</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="dropdown dropdown--hover">
+                            <a class="" data-cat-id="835" data-utm="Article|MenuMain|16" href="/du-lich.htm">Du Lịch</a>
+                            <div class="dropdown__content">
+                                <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                    <li>
+                                        <a data-utm="Article|MenuCate|1" href="/du-lich/tin-tuc.htm" title="Tin tức">Tin tức</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|2" href="/du-lich/kham-pha.htm" title="Khám phá">Khám phá</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|3" href="/du-lich/mon-ngon-diem-dep.htm" title="Món ngon - Điểm đẹp">Món ngon - Điểm đẹp</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|4" href="/du-lich/tour-hay-khuyen-mai.htm" title="Tour hay - Khuyến mại">Tour hay - Khuyến mại</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|5" href="/du-lich/video-anh.htm" title="Video - Ảnh">Video - Ảnh</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="dropdown dropdown--hover">
+                            <a class="" data-cat-id="170" data-utm="Article|MenuMain|17" href="/phap-luat.htm" title="Tin tức pháp luật 24h, vụ án, hình sự">Pháp luật</a>
+                        </li>
+                        <li class="dropdown dropdown--hover dropdown--right">
+                            <a class="" data-cat-id="135" data-utm="Article|MenuMain|18" href="/nhip-song-tre.htm" title="Nhịp sống trẻ, khởi nghiệp, giáo dục cộng đồng">Nhịp sống trẻ</a>
+                            <div class="dropdown__content">
+                                <ol class="site-menu__dropdown site-menu__dropdown--single">
+                                    <li>
+                                        <a data-utm="Article|MenuCate|1" href="/nhip-song-tre/nguoi-viet-tre.htm" title="Người Việt trẻ">Người Việt trẻ</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|2" href="/nhip-song-tre/teen-dep.htm" title="Teen đẹp">Teen đẹp</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|MenuCate|3" href="/nhip-song-tre/phong-su-tre.htm" title="Phóng sự trẻ">Phóng sự trẻ</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="others dropdown dropdown--hover dropdown--right" id="site-dropdown">
+                            <a href="javascript:;" id="site-dropdown-button">
+                            <span class="bars"></span>
+                            </a>
+                            <div class="dropdown__content" id="site-dropdown__content">
+                                <ol class="site-menu__dropdown">
+                                    <li>
+                                        <a data-utm="Article|Main_Menu|19" href="/khoa-hoc-cong-nghe.htm" title="Khoa học">
+                                        Khoa học</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|Main_Menu|20" href="/blog.htm" title="Blog">
+                                        Blog</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|Main_Menu|21" href="/du-hoc.htm" title="Du học">
+                                        Du học</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|Main_Menu|22" href="/tuyen-sinh.htm" title="Tuyển sinh">
+                                        Tuyển sinh</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|Main_Menu|23" href="http://fica.vn/" title="Fica">
+                                        Fica</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|Main_Menu|24" href="/ban-doc.htm" title="Bạn đọc">
+                                        Bạn đọc</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|Main_Menu|25" href="/doi-song.htm" title="Đời sống">
+                                        Đời sống</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|Main_Menu|26" href="/chuyen-la.htm" title="Chuyện lạ">
+                                        Chuyện lạ</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|Main_Menu|27" href="/dien-dan.htm" title="Diễn đàn">
+                                        Diễn đàn</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|Main_Menu|28" href="http://www.dtinews.vn" title="English">
+                                        English</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|Main_Menu|29" href="/tinh-yeu-gioi-tinh.htm" title="Tình yêu">
+                                        Tình yêu</a>
+                                    </li>
+                                    <li>
+                                        <a data-utm="Article|Main_Menu|30" href="/an-sinh.htm" title="An sinh">
+                                        An sinh</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </nav>
+            <div class="dt-top-banner">
+                <div class="top-banner">
+                    <div class="container">
+                        <div class="top-banner__content">
+                            <div id="xds-1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="dt-main">
+            <div class="container clearfix" data-sticky-container="" data-top-height-container="" news-type="0">
+                <div class="col col--main" top-height="left">
+                    <article class="dt-news__detail">
+                        <div class="dt-news__header">
+                            <ul class="dt-breadcrumb">
+                                <li>
+                                    <a href="/" title="Dân Trí">Dân Trí</a>
+                                </li>
+                                <li>
+                                    <a href="/xa-hoi.htm" title="Xã hội">Xã hội</a>
+                                </li>
+                            </ul>
+                            <div class="dt-news__meta">
+                                <span class="dt-news__time">Thứ tư, 21/10/2020 - 10:51</span>
+                            </div>
+                        </div>
+                        <h1 class="dt-news__title">
+                            Bão số 8 đổ thẳng vào miền Trung, phạm vi ảnh hưởng rất rộng
+                        </h1>
+                        <div class="dt-news__audio fl-center">
+                            <div dt-audio="20201021104528371"></div>
+                        </div>
+                        <div class="clearfix" data-sticky-container="">
+                            <ul class="dt-news__social" data-margin-bottom="16" data-margin-top="52">
+                                <li>
+                                    <div fb-btn="" id="20201021104528371" type="share"></div>
+                                </li>
+                                <li>
+                                    <a class="dt-social__item" href="mailto:?subject=/xa-hoi/bao-so-8-do-thang-vao-mien-trung-pham-vi-anh-huong-rat-rong-20201021104528371.htm" title="Chia sẻ qua Email">
+                                    <i class="dt-icon icon-email"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dt-social__item" href="/print-20201021104528371.htm" title="In">
+                                    <i class="dt-icon icon-print"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dt-social__item dt-social__item--primary" href="#dt-news__comment" title="Bình luận">
+                                    <i class="dt-icon icon-comment"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="dt-news__body">
+                                <div class="dt-news__sapo">
+                                    <span>Dân trí</span>
+                                    <h2> Đại diện cơ quan khí tượng thủy văn cho biết, bão số 8 có phạm vi ảnh hưởng rất rộng. Dự báo, cơn bão này sẽ vào đất liền các tỉnh Bắc Trung Bộ và Trung Trung Bộ trong khoảng ngày 24/10-25/10.</h2>
+                                </div>
+                                <div class="dt-news__content">
+                                    <p>Sáng nay (21/10), Ban Chỉ đạo Trung ương về phòng chống thiên tai đã tổ chức hội nghị chỉ đạo ứng phó với bão và mưa, lũ các tỉnh miền Trung. Hội nghị do Phó Thủ tướng Trịnh Đình Dũng và Bộ trưởng Bộ NN&amp;PTNT Nguyễn Xuân Cường chủ trì. </p>
+                                    <figure class="image align-center" contenteditable="false">
+                                        <img alt="Bão số 8 đổ thẳng vào miền Trung, phạm vi ảnh hưởng rất rộng - 1" data-height="3116" data-original="https://icdn.dantri.com.vn/2020/10/21/bao-so-85-1603251711671.jpg" data-photo-id="1126367" data-width="5069" src="https://icdn.dantri.com.vn/thumb_w/640/2020/10/21/bao-so-85-1603251711671.jpg" title="Bão số 8 đổ thẳng vào miền Trung, phạm vi ảnh hưởng rất rộng - 1">
+                                        <figcaption>
+                                            <p>Quang cảnh hội nghị.</p>
+                                        </figcaption>
+                                        </img>
+                                    </figure>
+                                    <p>Tại cuộc họp, ông Mai Văn Khiêm, Giám đốc Trung tâm Dự báo khí tượng thủy văn Quốc gia cho biết: Hồi 7h ngày 21/10, vị trí tâm bão số 8 ở khoảng 16,2 độ Vĩ Bắc; 118,6 độ Kinh Đông, cách Quần đảo Hoàng Sa khoảng 680km về phía Đông Đông Nam. Sức gió mạnh nhất vùng gần tâm bão mạnh cấp 8 (60-75km/giờ), giật cấp 10. Dự báo trong 24 giờ tới, bão di chuyển theo hướng Tây Tây Bắc, mỗi giờ đi được khoảng 10km và có khả năng mạnh thêm.</p>
+                                    <figure class="image align-center" contenteditable="false">
+                                        <img alt="Bão số 8 đổ thẳng vào miền Trung, phạm vi ảnh hưởng rất rộng - 2" data-height="3648" data-original="https://icdn.dantri.com.vn/2020/10/21/bao-so-84-1603251710751.jpg" data-photo-id="1126364" data-width="5472" src="https://icdn.dantri.com.vn/thumb_w/640/2020/10/21/bao-so-84-1603251710751.jpg" title="Bão số 8 đổ thẳng vào miền Trung, phạm vi ảnh hưởng rất rộng - 2"/>
+                                        <figcaption>
+                                            <p>Ông Mai Văn Khiêm thông tin tại hội nghị.</p>
+                                        </figcaption>
+                                    </figure>
+                                    <p>Ông Khiêm cho biết, đến 7h ngày 22/10, vị trí tâm bão ở khoảng 16,8 độ Vĩ Bắc; 116,5 độ Kinh Đông, cách quần đảo Hoàng Sa khoảng 440km về phía Đông. Sức gió mạnh nhất vùng gần tâm bão mạnh cấp 9-10 (75-100km/giờ), giật cấp 12.</p>
+                                    <p>Giám đốc Trung tâm Dự báo khí tượng thủy văn Quốc gia thông tin thêm, hiện nay các trung tâm dự báo quốc tế đều đưa ra nhận định, những ngày tiếp theo phạm vi vùng ảnh hưởng của bão rất rộng. </p>
+                                    <p>"Theo các đài khí tượng quốc tế, cường độ mạnh nhất của bão có thể đạt cấp 11-12, giật cấp 14 khi bão vào gần Quần đảo Hoàng Sa. Khi vào đất liền dự báo bão sẽ ở cấp 8-9, một số đài quốc tế cho là cấp 7", ông Khiêm nói.</p>
+                                    <p>Cũng theo ông Khiêm, hiện nay mặt nước biển gần khu vực Quần đảo Hoàng Sa có nhiệt độ khá cao là điều kiện thuận lợi cho bão tăng cường độ trong các giờ tiếp theo. Tuy nhiên, khi vượt qua Quần đảo Hoàng Sa, vào vùng biển phía trong thì nhiệt độ mặt nước biển thấp nên không làm tăng cường độ của bão.</p>
+                                    <p>Với các điều kiện như vậy, theo ông Khiêm, trong ngày và đêm nay (21/10), khu vực Bắc Biển Đông (bao gồm cả Quần đảo Hoàng Sa) có gió mạnh cấp 6-7, vùng gần tâm bão mạnh cấp 8, sau tăng lên cấp 9-10, giật cấp 12; biển động rất mạnh, sóng biển cao từ 5-7m.</p>
+                                    <p>Ngoài ra, ở khu vực Vịnh Bắc Bộ và các tỉnh Quảng Trị đến Quảng Ngãi có gió Đông Bắc mạnh cấp 6, giật cấp 8, biển động; sóng biển cao từ 2-6m.</p>
+                                    <p>"Bão số 8 có cường độ mạnh nhất khi đi vào khu vực Quần đảo Hoàng Sa, cường độ cấp 11-12, giật cấp 14. Bão hướng về khu vực đất liền các tỉnh Bắc Trung Bộ và Trung Trung Bộ, thời gian ảnh hưởng trực tiếp khoảng đêm 24/10 và ngày 25/10. Khi bão vào trong kinh tuyến 111E bão có xu hướng suy yếu", ông Khiêm nói.</p>
+                                    <p>Ông Khiêm cho biết thêm, bão số 8 sẽ gây mưa ở đồng bằng các tỉnh Thanh Hóa đến Thừa Thiên Huế, lượng mưa từ 24-25/10 từ 200-300mm.</p>
+                                    <p>"Ảnh hưởng về gió và mưa có thể không quá lớn, nhưng khu vực chịu ảnh hưởng của bão lại vừa chịu thiên tai rồi (ngập, lũ lụt, trượt lở đất...) thì thiệt hại sẽ rất lớn", ông Khiêm cho biết.</p>
+                                    <p>Trước diễn biến của bão số 8, Bộ trưởng NN&amp;PTNT Nguyễn Xuân Cường đề nghị các cơ quan liên và các địa phương nằm trong vùng ảnh hưởng của bão cần khẩn trương thông báo cho các tàu thuyền vào nơi tránh trú an toàn, tránh rủi ro xảy ra.</p>
+                                    <p>Ông cho hay cần rút kinh nghiệm 2 đợt vừa qua có 8 tàu vãng lai bị tai nạn, đây là bài học kinh nghiệm. Bộ trưởng lưu ý, tất cả hoạt động kinh tế biển phải đảm bảo an toàn, không để "giọt nước tràn ly", nếu có rủi ro nữa thì nguy cơ rất phức tạp.</p>
+                                    <p>Về hướng toàn bộ hoạt động sườn Tây khu vực miền Trung hiện nước đã bão hoà, bất kỳ tổn thương nào nhỏ cũng gây nguy cơ sạt lở lớn. Ông đề nghị cần hết sức chú ý mọi công tác ứng phó, cứu hộ cứu nạn.</p>
+                                    <p>"Hơn 2.000 hồ ở miền Trung cơ bản đầy ắp nước. Do đó hồ thuỷ điện và thuỷ lợi đều phải đặt trong tầm kiểm soát chặt chẽ nhất, nhất là hồ Kẻ Gỗ và Tả Trạch. Ông đề nghị Tổng cục Thuỷ lợi và địa phương cử "quân" giám sát, nếu chỉ mưa 200-300mm thì vẫn có nguy cơ cao xảy ra "thủy phá thổ"", ông Cường lưu ý.</p>
+                                    <p><strong>Mưa lũ, sạt lở đất ở miền Trung gây thiệt hại nặng nề nhất nhiệm kỳ này!</strong></p>
+                                    <figure class="image align-center" contenteditable="false">
+                                        <img alt="Bão số 8 đổ thẳng vào miền Trung, phạm vi ảnh hưởng rất rộng - 3" data-height="3648" data-original="https://icdn.dantri.com.vn/2020/10/21/bao-so-8-1603251711484.jpg" data-photo-id="1126365" data-width="5472" src="https://icdn.dantri.com.vn/thumb_w/640/2020/10/21/bao-so-8-1603251711484.jpg" title="Bão số 8 đổ thẳng vào miền Trung, phạm vi ảnh hưởng rất rộng - 3"/>
+                                        <figcaption>
+                                            <p>Phó Thủ tướng Trịnh Đình Dũng phát biểu chỉ đạo hội nghị.</p>
+                                        </figcaption>
+                                    </figure>
+                                    <p>Phát biểu chỉ đạo tại hội nghị, Phó Thủ tướng Trịnh Đình Dũng cho biết: Mưa lũ, sạt lở đất ở các tỉnh miền Trung và Tây Nguyên thời gian qua gây thiệt hại nặng nề nhất nhiệm kỳ này.</p>
+                                    <p>Phó Thủ tướng cho biết, khi ông đi kiểm tra vùng thiệt hại do mưa lũ, sạt lở đất ở miền Trung vẫn còn nhiều hộ dân rất khó khăn, nhất là về lương thực thực phẩm và các nhu yếu phẩm khác.</p>
+                                    <p>"Tôi đề nghị tập trung cứu trợ người dân, đặc biệt là ở Quảng Bình, Hà Tĩnh. Khẩn trương cứu trợ về lương thực thực phẩm, nhu yếu phẩm cho bà con. Ngoài ra, làm thế nào bà con có chất đốt để nấu nướng, vì điện lưới nhiều nơi đang mất", Phó Thủ tướng đề nghị.</p>
+                                    <p>Từ thực tế chuyến đi của ông, Phó Thủ tướng cho biết, nhiều đoàn cứu trợ mới chỉ vào khu vực thuận lợi về giao thông, còn nhiều chỗ khó khăn hàng cứu trợ chưa đến được với người dân. Ông đề nghị Bộ NN&amp;PTNT sẽ tiếp tục cử đoàn vào miền Trung để xem bà con cần hỗ trợ những gì để có biện pháp cứu trợ. </p>
+                                    <p>"Tôi đề nghị Bộ NN&amp;PTNT cần hỗ trợ cho mỗi tỉnh chịu thiệt hại về mưa lũ, sạt lở đất ở miền Trung mỗi tỉnh 5 tấn xúc xích, bởi ngoài ngoài mỳ tôm, bánh mỳ thì cũng cần xúc xích để đảm bảo đủ dinh dưỡng. Làm thế nào hàng cứu trợ phải đến tận tay người dân", Phó Thủ tướng đề nghị.</p>
+                                    <p>Theo Phó Thủ tướng, đối với hàng hóa cứu trợ cần tập trung giao về đầu mối các địa phương, Mặt trận Tổ quốc. Bởi thông qua chính quyền địa phương, cơ quan chuyên trách mới nắm được chính xác danh sách các hoàn cảnh cần hỗ trợ, từ đó hàng cứu trợ mới đến đúng hoàn cảnh cần hỗ trợ.</p>
+                                    <p>Vẫn liên quan đến công tác cứu trợ, khắc phục hậu quả thiên tai ở các tỉnh miền Trung, Phó Thủ tướng yêu cầu Bộ NN&amp;PTNT phối hợp với các đơn vị chuyên trách của Bộ Quốc phòng cần tính toán để bố trí phương tiện, có thể phải sử dụng trực thăng để đẩy nhanh công việc này.</p>
+                                    <p>Về ứng phó với bão số 8, Phó Thủ tướng đồng tình với các chỉ đạo của Bộ trưởng Bộ NN&amp;PTNT Nguyễn Xuân Cường. Ông lưu ý thêm, khu vực miền Trung đã chịu tổn thất nặng nề đợt thiên tai vừa qua nên cần sớm lên kế hoạch ứng phó với bão số 8, giảm thiệt hại xuống mức thấp nhất.</p>
+                                    <p style="text-align:right"><strong> Nguyễn Dương</strong></p>
+                                    <div id="xds-155"></div>
+                                </div>
+                                <div id="xds-151"></div>
+                                <div data-tin-lien-quan=""></div>
+                                <div id="tin-lien-quan">
+                                    <section class="dt-section dt-section--simple mt-3">
+                                        <header class="dt-section__header">
+                                            <h2 class="dt-section__title">
+                                                Tin liên quan            
+                                            </h2>
+                                        </header>
+                                        <div class="dt-section__body">
+                                            <ul class="dt-news__links">
+                                                <li>
+                                                    <h3 class="dt-news__link">
+                                                        <a data-utm="Article|Box_TinLienQuan|1" href="/xa-hoi/bao-saudel-da-vao-bien-dong-20201021063455071.htm" title="Bão Saudel đã vào Biển Đông">Bão Saudel đã vào Biển Đông</a>
+                                                    </h3>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </section>
+                                </div>
+                                <div id="xds-20000"></div>
+                                <div data-dong-du-kien=""></div>
+                                <div id="dong-du-kien"></div>
+                                <div class="dt-news__tags">
+                                    <div class="dt-news__tag-label">Từ khóa:</div>
+                                    <ul class="dt-news__tag-list">
+                                        <li>
+                                            <h4 class="dt-news__tag">
+                                                <a data-utm="Tag_BaoSo8|Box_Tag|1" href="/bao-so-8.tag" title="bão số 8">bão số 8</a>
+                                            </h4>
+                                        </li>
+                                        <li>
+                                            <h4 class="dt-news__tag">
+                                                <a data-utm="Tag_PhamViAnhHuongRong|Box_Tag|2" href="/pham-vi-anh-huong-rong.tag" title="phạm vi ảnh hưởng rộng">phạm vi ảnh hưởng rộng</a>
+                                            </h4>
+                                        </li>
+                                        <li>
+                                            <h4 class="dt-news__tag">
+                                                <a data-utm="Tag_BacTrungBo|Box_Tag|3" href="/bac-trung-bo.tag" title="Bắc Trung Bộ">Bắc Trung Bộ</a>
+                                            </h4>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="xds-152"></div>
+                                <div sponsor-news="20"></div>
+                                <div class="dt-news__comment" id="dt-news__comment">
+                                    <div comment-widget="" object-id="20201021104528371" zone-id="20"></div>
+                                </div>
+                                <div data-moi-nhat=""></div>
+                                <div recommend-news=""></div>
+                                <div data-cat="20" data-count="3" data-dtms="wss-prod" data-font="1" data-type="1"></div>
+                                <div data-dang-quan-tam=""></div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col col--secondary" top-height="right">
+                    <div>
+                        <div ung-ho-box=""></div>
+                        <div id="xds-150"></div>
+                    </div>
+                </div>
+            </div>
+            <div data-custom-script="20"></div>
+            <div facebook-init=""></div>
+            <div image-preview=""></div>
+            <script type="application/ld+json">
+                {"@context":"http://schema.org","@type":"Organization","name":"Báo Dân Trí","url":"https://dantri.com.vn","slogan":"Tin tức Việt Nam và quốc tế nóng, nhanh, cập nhật 24h","logo":"https://cdnweb.dantri.com.vn/bundle/static/assets/logo_dantri.png","email":"info@dantri.com.vn","additionalType":"https://vi.wikipedia.org/wiki/B%C3%A1o_%C4%91i%E1%BB%87n_t%E1%BB%AD","sameAs":["https://www.facebook.com/baodantridientu","https://vi.wikipedia.org/wiki/D%C3%A2n_tr%C3%AD_(b%C3%A1o)"],"address":{"@type":"PostalAddress","streetAddress":"Nhà 48, ngõ 2 Giảng Võ, Cát Linh, Đống Đa","addressLocality":"Hà Nội"},"contactPoint":[{"@type":"ContactPoint","telephone":"+842437366491","contactOption":"TollFree","contactType":"customer service","areaServed":"VN"}]}
+            </script>
+            <script type="application/ld+json">{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[[{"@type":"ListItem","position":1,"name":"Trang chủ","item":"https://dantri.com.vn/"}],[{"@type":"ListItem","position":2,"name":"Xã hội","item":"https://dantri.com.vn/xa-hoi.htm"}]]}</script>
+            <script>var breadcrumbs=[0,20];</script>
+            <script type="application/ld+json">{"@context":"http://schema.org","@type":"NewsArticle","mainEntityOfPage":{"@context":"http://schema.org","@type":"WebPage","@id":"https://dantri.com.vn/xa-hoi/bao-so-8-do-thang-vao-mien-trung-pham-vi-anh-huong-rat-rong-20201021104528371.htm"},"headline":"Bão số 8 đổ thẳng vào miền Trung, phạm vi ảnh hưởng rất rộng","description":"(Dân trí) - Đại diện cơ quan khí tượng thủy văn cho biết, bão số 8 có phạm vi ảnh hưởng rất rộng. Dự báo, cơn bão này sẽ vào đất liền các tỉnh Bắc Trung Bộ và Trung Trung Bộ trong khoảng ngày 24/10-25/10.","image":{"@context":"http://schema.org","@type":"ImageObject","url":"https://icdn.dantri.com.vn/zoom/1200_630/2020/10/21/baoso-81603251711484-1603252259994.jpg","width":"1200","height":"630"},"author":{"@context":"http://schema.org","@type":"Organization","name":"Dân Trí","url":"https://dantri.com.vn"},"datePublished":"2020-10-21T10:51:28.543","dateModified":"2020-10-21T10:51:28.543","publisher":{"@context":"http://schema.org","@type":"Organization","name":"Báo Dân Trí","logo":{"@context":"http://schema.org","@type":"ImageObject","url":"https://cdnweb.dantri.com.vn/bundle/static/assets/logo_dantri.png","height":"160px","width":"48px"}}}</script>
+        </main>
+        <footer class="dt-footer">
+            <div class="dt-footer__content">
+                <div class="container">
+                    <div class="row">
+                        <div class="dt-footer__info col-6">
+                            <p>Cơ quan của Bộ Lao động - Thương binh và Xã hội</p>
+                            <p>Tổng biên tập: Phạm Tuấn Anh</p>
+                            <p>
+                                Giấy phép hoạt động báo điện tử Dân trí số 298/GP - BTTTT Hà Nội, ngày 15-07-2020.
+                            </p>
+                            <p>Tòa soạn: Nhà 48, ngõ 2 Giảng Võ, Cát Linh, Đống Đa, Hà Nội</p>
+                            <p>
+                                Điện thoại: <a href="tel:024-3736-6491">024-3736-6491</a>. Fax:
+                                <a href="tel:024-3736-6491">024-3736-6491</a>
+                            </p>
+                            <p>
+                                Email: <a href="mailto:info@dantri.com.vn">info@dantri.com.vn</a>.
+                                Website:
+                                <a href="https://www.dantri.com.vn">https://www.dantri.com.vn</a>
+                            </p>
+                            <p>
+                                Mọi hành động sử dụng nội dung đăng tải trên Báo điện tử Dân trí tại
+                                địa chỉ www.dantri.com.vn phải có sự đồng ý bằng văn bản của Báo
+                                điện tử Dân trí.
+                            </p>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="dt-footer__ads col-4">
+                            <p class="dt-footer_ads-info">
+                                Liên hệ quảng cáo: <a href="tel:0945540330">0945.54.03.03</a>
+                            </p>
+                            <p>Email: <a href="mailto:quangcao@dantri.com.vn">quangcao@dantri.com.vn</a></p>
+                            <p>
+                                <a href="javascript:void(0);" switch-version=""><strong>Xem bản mobile</strong></a>
+                            </p>
+                            <div class="dt-footer__app clearfix">
+                                <a aria-label="Báo Dân trí ios" href="https://apps.apple.com/vn/app/b%C3%A1o-d%C3%A2n-tr%C3%AD-dantri-com-vn/id1455334618?l=vi" rel="noopener" target="_blank" title="Báo Dân trí - Dantri.com.vn">
+                                <i class="dt-icon icon-app-store"></i>
+                                </a>
+                                <a aria-label="Báo Dân trí android" href="https://play.google.com/store/apps/details?id=vn.com.dantrinews.android" rel="noopener" target="_blank" title="Báo Dân trí - Dantri.com.vn">
+                                <i class="dt-icon icon-play-store"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>var jsSettings={"ImageDomain":"https://icdn.dantri.com.vn","VideoDomain":"https://vcdn.dantri.com.vn","AudioDomain":"https://acdn.dantri.com.vn","CommentsDomain":"https://comment.dantri.com.vn","ApiComments":"https://apicomment.dantri.com.vn","DuLichDomain":"https://dulich.dantri.com.vn","TuyenSinhDomain":"https://tuyensinh.dantri.com.vn","DuHocDomain":"https://duhoc.dantri.com.vn","WebDomain":"https://dantri.com.vn","MobileDomain":"https://dantri.com.vn","CaptchaDomain":"https://captcha.dantri.com.vn","WebApi":"https://webapi.dantri.com.vn","AssertsDomain":"https://cdnweb.dantri.com.vn","ResourceDomains":["https://*.dantri.com.vn/**","http://*.dantri.com.vn/**"],"CurrentDomain":"https://dantri.com.vn","IsMobile":0,"UngHoDomain":"https://ungho.dantri.com.vn","FacebookAppId":"164035690775918","CommonCDN":"https://cdnasset.dantri.com.vn","IsAmp":0,"BlockedAds":false,"Features":{"BannerUngThu":false},"AppType":"Web","XdsSlots":{"INVALID":"xds-0","TOP_HEADER":"xds-1","TOP_NEXT_TO_DT_LOGO":"xds-2","BACKGROUP":"xds-3","HOME_BALLOON_ADS":"xds-4","HOME_BACKGROUND":"xds-40","HOME_TOP_HEADER":"xds-41","HOME_TOP_RIGHT":"xds-50","HOME_MIDDLE_RIGHT":"xds-51","HOME_CENTER_BANNER":"xds-52","HOME_NATIVE_1":"xds-53","HOME_NATIVE_2":"xds-54","HOME_BOTTOM":"xds-55","HOME_MIDDLE_COLUMN_BOTTOM":"xds-56","HOME_PRIMARY_TOP":"xds-57","HOME_PRIMARY_BOTTOM":"xds-58","HOME_NATIVE_3":"xds-59","HOME_NATIVE_4":"xds-60","HOME_HORIZONTAL_0":"xds-70","HOME_HORIZONTAL_1":"xds-71","HOME_HORIZONTAL_2":"xds-72","HOME_HORIZONTAL_3":"xds-73","HOME_HORIZONTAL_4":"xds-74","HOME_HORIZONTAL_5":"xds-75","HOME_HORIZONTAL_6":"xds-76","HOME_HORIZONTAL_7":"xds-77","CATEGORY_BACKGROUND":"xds-90","CATEGORY_TOP_HEADER":"xds-92","CATEGORY_TOP_RIGHT":"xds-100","CATEGORY_MIDDLE_RIGHT":"xds-101","CATEGORY_MIDDLE_CENTER":"xds-102","CATEGORY_NATIVE_1":"xds-103","CATEGORY_NATIVE_2":"xds-104","CATEGORY_BOTTOM":"xds-105","CATEGORY_NATIVE_3":"xds-106","CATEGORY_TOP_READ":"xds-107","CATEGORY_NATIVE_4":"xds-108","ARTICLE_RIGHT":"xds-150","ARTICLE_BOTTOM":"xds-151","ARTICLE_BANNER":"xds-152","ARTICLE_NATIVE_1":"xds-153","ARTICLE_NATIVE_2":"xds-154","ARTICLE_IN_PAGE_1":"xds-155","ARTICLE_IN_PAGE_2":"xds-156","ARTICLE_TOP_HEADER":"xds-157","ARTICLE_BOTTOM_PAGE":"xds-158","ARTICLE_NATIVE_3":"xds-159","MOBILE_TOP_HEADER":"xds-200","MOBILE_TOP_MOST":"xds-201","MOBILE_CATE_TOP_HEADER":"xds-202","MOBILE_ARTICLE_TOP_HEADER":"xds-203","MOBILE_AFTER_BREADCRUMB":"xds-250","MOBILE_CATE_NATIVE_1":"xds-260","MOBILE_CATE_NATIVE_2":"xds-261","MOBILE_CATE_NATIVE_3":"xds-262","MOBILE_CATE_E_MAGAZINE_1":"xds-263","MOBILE_CATE_BOTTOM":"xds-264","MOBILE_CATEGORY_CENTER_1":"xds-265","MOBILE_CATE_ABOVE_NAV":"xds-266","MOBILE_BEFORE_FOOTER":"xds-300","MOBILE_HOME_CENTER_1":"xds-301","MOBILE_HOME_CENTER_2":"xds-302","MOBILE_BIG_ARTICLE_1":"xds-305","MOBILE_BIG_ARTICLE_2":"xds-306","MOBILE_HOME_CENTER_3":"xds-307","MOBILE_HOME_CENTER_4":"xds-308","MOBILE_HOME_CENTER_5":"xds-309","MOBILE_BEFORE_VIDEO":"xds-400","MOBILE_HOME_BOTTOM":"xds-401","MOBILE_FIRST_10_ARTICLE":"xds-500","MOBILE_IN_PAGE_1":"xds-3030","MOBILE_IN_PAGE_2":"xds-3040","MOBILE_BIG_ARTICLE_3":"xds-3061","MOBILE_BIG_ARTICLE_4":"xds-3062","MOBILE_BIG_ARTICLE_5":"xds-3063","MOBILE_HOME_CENTER_6":"xds-3091","MOBILE_HOME_CENTER_7":"xds-3092","MOBILE_HOME_CENTER_8":"xds-3093","MOBILE_ARTICLE_E_MAGAZINE":"xds-4010","AMP_AUTO_ADS":"xds-9999","AMP_HOME_BEFORE_TTSK":"xds-10000","AMP_HOME_TTSK_5TH":"xds-10001","AMP_HOME_BEFORE_VIDEO":"xds-10002","AMP_HOME_BEFORE_THE_THAO":"xds-10003","AMP_HOME_NHAN_AI":"xds-10004","AMP_HOME_VAN_HOA":"xds-10005","AMP_HOME_PHAP_LUAT":"xds-10006","AMP_HOME_OTO":"xds-10007","AMP_HOME_KHOA_HOC":"xds-10008","AMP_HOME_DU_HOC":"xds-10009","AMP_HOME_BLOG":"xds-10010","AMP_ARTICLE_AFTER_SAPO":"xds-10050","AMP_ARTICLE_PARAGRAPH9":"xds-10051","AMP_ARTICLE_PARAGRAPH3":"xds-10052","AMP_ARTICLE_SHARE":"xds-10053","AMP_ARTICLE_LASTEST":"xds-10060","AMP_ARTICLE_FOOTER":"xds-10061","AMP_CATE_TOP":"xds-10100","AMP_CATE_TOP4":"xds-10101","AMP_CATE_AFTER_VIDEO":"xds-10102","AMP_CATE_NEWS_5TH":"xds-10103","AMP_CATE_NEWS_BOTTOM":"xds-10104","AMP_CATE_FOOTER":"xds-10105","AMP_TAG_TOP":"xds-10150","AMP_TAG_MIDDLE":"xds-10151","AMP_TAG_FOOTER":"xds-10152","INTER_WEB_ARTICLE_TIN_LIEN_QUAN":"xds-20000","INTER_MOBILE_ARTICLE_TIN_LIEN_QUAN":"xds-30000"},"IsInter":false,"Version":"637388849815539775","GoogleCaptchaConfig":{"SiteKey":"6LfAP8kZAAAAAPiZ8ZFuHdhifvNch-G9O1-aLQRs","SecretKey":null}};</script>
+        <script>var shortArticle= {"available":false,"id":"20201021104528371","subTitle":null,"title":"Bão số 8 đổ thẳng vào miền Trung, phạm vi ảnh hưởng rất rộng","sapo":"<span>Dân trí</span>&nbsp;Đại diện cơ quan khí tượng thủy văn cho biết, bão số 8 có phạm vi ảnh hưởng rất rộng. Dự báo, cơn bão này sẽ vào đất liền các tỉnh Bắc Trung Bộ và Trung Trung Bộ trong khoảng ngày 24/10-25/10.","image":"https://icdn.dantri.com.vn/thumb_w/220/2020/10/21/baoso-81603251711484-1603252259994.jpg","url":"/xa-hoi/bao-so-8-do-thang-vao-mien-trung-pham-vi-anh-huong-rat-rong-20201021104528371.htm","tm":656592688.543};
+            var articleCategoryTree=[0,20,728];
+        </script>
+        <script src="https://cdnweb.dantri.com.vn/bundle/static/dantri.min.js?_=7cf2a43c"></script>
+        <script src="https://cdnweb.dantri.com.vn/bundle/static/vdlibs~dantri.min.js?_=7cf2a43c"></script>
+        <script src="https://cdnweb.dantri.com.vn/bundle/static/vendors~dantri.min.js?_=7cf2a43c"></script>
+    </body>
+</html>
